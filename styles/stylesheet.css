@@ -1,0 +1,37 @@
+body{
+  /* Change background, and set global font family */
+}
+
+h1{
+  /* Make bigger and color, change our font family to sans serif */
+  text-align: center;
+  font-family: "Arial", Arial, serif;
+  color:mediumpurple;
+}
+
+nav.main-nav{
+  /* Change background color, remove bullets, border on each individual nav element, float the links, center our content within the links, width on links, font color, font change family */
+  background-color: mediumpurple;
+}
+
+aside{
+  /* Clear float, background color, float*/
+}
+
+aside ul{
+  /* Clear both*/
+}
+
+article{
+  /*Center the content.Change the background color. Float right or left, depending what works.*/
+}
+
+figure{
+/* Within figure, center everything by using margin-auto.*/
+}
+
+footer{
+  /*Images float left and center on the page.*/
+}
+
+/*Set widths on everything*/
