@@ -1,8 +1,14 @@
+  /* Change background, and set global font family */
 article.content-wrapper{
   margin: 0;
   padding: 0;
-  /* Change background, and set global font family */
   font-family: "Arial", Arial, serif;
+  position: absolute;
+  height: 100%;
+  width: 88%;
+  text-align: center;
+  border-left: black solid 5em;
+  border-right: black solid 5em;
 }
 
 h1{
@@ -18,11 +24,16 @@ h1{
 nav.main-nav{
   font-size: 10px;
   position: absolute;
-  margin: 0 auto;
-  padding: 6px 6px 6px;
+  margin-left: auto;
+  margin-right: auto;
   width: 100%;
   float: left;
   background-color: mediumpurple;
+}
+
+nav.main-nav ul{
+  display: flex;
+  justify-content:space-around;
 }
 
 nav.main-nav li{
@@ -38,6 +49,11 @@ nav.main-nav li{
   text-align: center;
 }
 
+/* Eliminate final black line, after the last link in navbar */
+nav.main-nav li:last-child{
+  border-right: mediumpurple solid 0.05px;
+}
+
 nav.main-nav a{
   display: block;
   color: white;
@@ -50,9 +66,8 @@ aside{
   clear: float;
   float: left;
   background-color: violet;
-  position: absolute;
-  height: 80%;
-  padding: ;
+/*  margin-top: auto;*/
+  padding: 30px 30px 30px 30px;
   border: none;
   line-height: normal
 }
