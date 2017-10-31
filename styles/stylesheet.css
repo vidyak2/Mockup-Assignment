@@ -20,7 +20,6 @@ h1{
 }
 
   /* Change background color, remove bullets, border on each individual nav element, float the links, center our content within the links, width on links, font color, font change family */
-
 nav.main-nav{
   font-size: 12px;
   font-weight: bold;
@@ -102,7 +101,9 @@ article.text{
 
   /* Within figure, center everything by using margin-auto.*/
 figure{
-  margin: auto;
+  margin-left: 40px;
+  margin-right: 40px;
+  text-align: center;
 }
 
 img.one{
