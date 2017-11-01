@@ -23,8 +23,7 @@ h1{
 nav.main-nav{
   float: left;
   width: 100%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: auto;
   font-size: 12px;
   font-weight: bold;
   background-color: mediumpurple;
@@ -51,7 +50,7 @@ nav.main-nav li:last-child{
   border-right: mediumpurple solid 0.05px;
 }
 
-  /* Clear float */
+/* Clear float */
 aside ul{
   clear: both;
 }
@@ -59,10 +58,7 @@ aside ul{
 aside{
   float: left;
   background-color: plum;
-  padding: 30px 60px 30px 60px;
-  line-height: normal;
-  font-size: 12px;
-  font-weight: bold;
+  padding: 0px 60px 0px 60px;
 }
 
 /* Side navigation */
@@ -74,40 +70,42 @@ nav.second-nav li{
   padding: 10px;
 }
 nav.second-nav a{
-  display: block;
+  display: inline;
+  font-size: 12px;
+  font-weight: bold;
   color: white;
   text-decoration: none;
 }
 
-  /* Article: Add background, center the content, change the background color */
-article.text{
+  /* Figure: Add background, center the content, change the background color */
+figure{
+  float: right;
+  display: inline;
+  margin: auto;
+  width: 82.4%;
+
   background-color: lightgrey;
   border-top: lightgrey solid 6em;
-  border-bottom: lightgrey solid 8em;
+  border-bottom: lightgrey solid 9.3em;
+  
+  text-align: center;
   font-size: 10px;  
-  padding: 30px 60px 30px 60px;
-}
-
-  /* Figure: Center everything by using margin-auto */
-figure{
-  clear: both;
-  float: left;
-  margin: auto;
 }
 
 figcaption{
-  text-align: center;
-  padding: 0px 30px 0px 30px;
-  margin: 0em 5em 0em 20em;
+  display: block;
+  margin: auto;
+  position: absolute;
+  padding: 10px 40px 10px 40px;
 }
 
 img.one{
-  height: 30%;
-  width: 30%;
-  padding: 45px 10px 10px 10px;
+  height: 40%;
+  width: 40%;
+  padding: 50px 10px 10px 10px;
 }
 
-  /* Footer: Images styles */
+/* Footer: Images styles */
 img.two{
   clear: both;
   height: 2%;
@@ -116,4 +114,4 @@ img.two{
 }
 footer{
   width: 100%;
-}
+} 
