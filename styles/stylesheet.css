@@ -19,7 +19,7 @@ h1{
   padding-bottom: 10px;
 }
 
-  /* Change background color, remove bullets, border on each individual nav element, float the links, center our content within the links, width on links, font color, font change family */
+  /* Main Nagigation: Change font style, make navbar the entir width of the page, set background color */ 
 nav.main-nav{
   font-size: 12px;
   font-weight: bold;
@@ -30,20 +30,25 @@ nav.main-nav{
   float: left;
   background-color: mediumpurple;
 }
-
+ /* Place links in the center, one next to the other, equidistant throughout the bar */
 nav.main-nav ul{
   display: flex;
   justify-content:space-around;
 }
 
+/* Float left, add borders, and padding to the elements in the list */
 nav.main-nav li{
   border-right: black solid 0.05px;
   float: left;
-  position: center;
   width: 12%;
   padding: 6px;
-  background-color: mediumpurple;
-  text-align: center;
+}
+
+/* Style links */
+nav.main-nav a{
+  display: block;
+  color: white;
+  text-decoration: none;
 }
 
 /* Eliminate final black line, after the last link in navbar */
@@ -51,47 +56,35 @@ nav.main-nav li:last-child{
   border-right: mediumpurple solid 0.05px;
 }
 
-nav.main-nav a{
-  display: block;
-  color: white;
-  text-align: center;
-  text-decoration: none;
-}
-
-  /* Clear float, background color, float*/
+  /* Clear float. Aside: Add float, background color, text style and padding */
 aside ul{
   clear: both;
 }
 aside{
-  clear: float;
   float: left;
   background-color: plum;
   font-size: 12px;
   font-weight: bold;
-  
   padding: 30px 60px 30px 60px;
   line-height: normal;
 }
 
+/* Side navigation */
 nav.second-nav ul{
   margin-top: 4em;
   margin-bottom: 7em;
-  justify-content:space-around;
 }
-
 nav.second-nav li{
   padding: 10px;
   text-align: center;
 }
-
 nav.second-nav a{
   display: block;
   color: white;
-  text-align: center;
   text-decoration: none;
 }
 
-  /*Center the content.Change the background color. Float right or left, depending what works.*/
+  /* Article: Add background, center the content, Change the background color. Float right or left, depending what works.*/
 article.text{
   background-color: lightgrey;
   border-top: lightgrey solid 6em;
