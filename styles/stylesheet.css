@@ -1,4 +1,4 @@
-  /*Set widths on everything. Change background, and set global font family */
+  /* Entire page: Set widths, and set global font family */
 article.content-wrapper{
   margin: 0;
   padding: 0;
@@ -11,7 +11,7 @@ article.content-wrapper{
   border-right: black solid 8em;
 }
 
-  /* Make bigger and color, change our font family to sans serif */
+  /* Header: Change text size, color, and padding */
 h1{
   color:mediumpurple;
   font-size: 24px;
@@ -46,7 +46,7 @@ nav.main-nav a{
   color: white;
   text-decoration: none;
 }
-/* Eliminate final black line, after the last link in navbar */
+/* Eliminate black line after the last link */
 nav.main-nav li:last-child{
   border-right: mediumpurple solid 0.05px;
 }
@@ -64,6 +64,7 @@ aside{
   font-size: 12px;
   font-weight: bold;
 }
+
 /* Side navigation */
 nav.second-nav ul{
   margin-top: 6em;
@@ -78,7 +79,7 @@ nav.second-nav a{
   text-decoration: none;
 }
 
-  /* Article: Add background, center the content, Change the background color. Float right or left, depending what works.*/
+  /* Article: Add background, center the content, change the background color */
 article.text{
   background-color: lightgrey;
   border-top: lightgrey solid 6em;
@@ -87,10 +88,11 @@ article.text{
   padding: 30px 60px 30px 60px;
 }
 
-  /* Within figure, center everything by using margin-auto.*/
+  /* Figure: Center everything by using margin-auto */
 figure{
   clear: both;
   float: left;
+  margin: auto;
 }
 
 figcaption{
@@ -105,7 +107,7 @@ img.one{
   padding: 45px 10px 10px 10px;
 }
 
-  /* Footer images styles */
+  /* Footer: Images styles */
 img.two{
   clear: both;
   height: 2%;
