@@ -5,78 +5,72 @@ article.content-wrapper{
   font-family: "Arial", Arial, serif;
   position: absolute;
   height: 100%;
-  width: 88%;
+  width: 80%;
   text-align: center;
-  border-left: black solid 5em;
-  border-right: black solid 5em;
+  border-left: black solid 8em;
+  border-right: black solid 8em;
 }
 
   /* Make bigger and color, change our font family to sans serif */
 h1{
-  text-align: center;
   color:mediumpurple;
+  font-size: 24px;
   padding-top: 20px;
   padding-bottom: 10px;
 }
 
-  /* Main Nagigation: Change font style, make navbar the entir width of the page, set background color */ 
+  /* Main Nagigation: Float, make navbar the entire width of the page, set font style and background color */ 
 nav.main-nav{
-  font-size: 12px;
-  font-weight: bold;
-  position: absolute;
+  float: left;
+  width: 100%;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
-  float: left;
+  font-size: 12px;
+  font-weight: bold;
   background-color: mediumpurple;
 }
- /* Place links in the center, one next to the other, equidistant throughout the bar */
+ /* Place links in the center, equidistant throughout the bar */
 nav.main-nav ul{
   display: flex;
   justify-content:space-around;
 }
-
-/* Float left, add borders, and padding to the elements in the list */
+/* Add borders, and padding to the elements in the list */
 nav.main-nav li{
   border-right: black solid 0.05px;
-  float: left;
   width: 12%;
   padding: 6px;
 }
-
 /* Style links */
 nav.main-nav a{
   display: block;
   color: white;
   text-decoration: none;
 }
-
 /* Eliminate final black line, after the last link in navbar */
 nav.main-nav li:last-child{
   border-right: mediumpurple solid 0.05px;
 }
 
-  /* Clear float. Aside: Add float, background color, text style and padding */
+  /* Clear float */
 aside ul{
   clear: both;
 }
+/* Aside: Add float, background color, padding, and text style */
 aside{
   float: left;
   background-color: plum;
-  font-size: 12px;
-  font-weight: bold;
   padding: 30px 60px 30px 60px;
   line-height: normal;
+  font-size: 12px;
+  font-weight: bold;
 }
-
 /* Side navigation */
 nav.second-nav ul{
-  margin-top: 4em;
-  margin-bottom: 7em;
+  margin-top: 6em;
+  margin-bottom: 8em;
 }
 nav.second-nav li{
   padding: 10px;
-  text-align: center;
 }
 nav.second-nav a{
   display: block;
@@ -88,31 +82,36 @@ nav.second-nav a{
 article.text{
   background-color: lightgrey;
   border-top: lightgrey solid 6em;
-  border-bottom: lightgrey solid 4em;
+  border-bottom: lightgrey solid 8em;
   font-size: 10px;  
+  padding: 30px 60px 30px 60px;
 }
 
   /* Within figure, center everything by using margin-auto.*/
 figure{
-  margin-left: 40px;
-  margin-right: 40px;
+  clear: both;
+  float: left;
+}
+
+figcaption{
   text-align: center;
+  padding: 0px 30px 0px 30px;
+  margin: 0em 5em 0em 20em;
 }
 
 img.one{
   height: 30%;
   width: 30%;
-  padding: 50px 10px 10px 10px;
+  padding: 45px 10px 10px 10px;
 }
 
-  /*Images float left and center on the page.*/
+  /* Footer images styles */
 img.two{
-  float: clear;
+  clear: both;
   height: 2%;
   width: 2%;
   padding: 20px 10px;
 }
-
 footer{
   width: 100%;
 }
