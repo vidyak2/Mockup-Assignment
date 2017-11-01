@@ -1,4 +1,5 @@
-  /* Entire page: Set widths, and set global font family */
+/* Styling is mainly the same, since it is almost identical to index.html */
+
 article.content-wrapper{
   margin: 0;
   padding: 0;
@@ -11,7 +12,6 @@ article.content-wrapper{
   border-right: black solid 8em;
 }
 
-  /* Header: Change text size, color, and padding */
 h1{
   color:mediumpurple;
   font-size: 24px;
@@ -19,7 +19,6 @@ h1{
   padding-bottom: 10px;
 }
 
-  /* Main Nagigation: Float, make navbar the entire width of the page, set font style and background color */ 
 nav.main-nav{
   float: left;
   width: 100%;
@@ -29,24 +28,20 @@ nav.main-nav{
   font-weight: bold;
   background-color: mediumpurple;
 }
- /* Place links in the center, equidistant throughout the bar */
 nav.main-nav ul{
   display: flex;
   justify-content:space-around;
 }
-/* Add borders, and padding to the elements in the list */
 nav.main-nav li{
   border-right: black solid 0.05px;
   width: 12%;
   padding: 6px;
 }
-/* Style links */
 nav.main-nav a{
   display: block;
   color: white;
   text-decoration: none;
 }
-/* Eliminate black line after the last link */
 nav.main-nav li:last-child{
   border-right: mediumpurple solid 0.05px;
 }
@@ -55,7 +50,6 @@ nav.main-nav li:last-child{
 aside ul{
   clear: both;
 }
-/* Aside: Add float, background color, padding, and text style */
 aside{
   float: left;
   background-color: plum;
@@ -68,7 +62,7 @@ aside{
 /* Side navigation */
 nav.second-nav ul{
   margin-top: 6em;
-  margin-bottom: 8em;
+  margin-bottom:9.8em;
 }
 nav.second-nav li{
   padding: 10px;
@@ -79,16 +73,13 @@ nav.second-nav a{
   text-decoration: none;
 }
 
-  /* Article: Add background, center the content, change the background color */
 article.text{
   background-color: lightgrey;
   border-top: lightgrey solid 6em;
-  border-bottom: lightgrey solid 3em;
   font-size: 10px;  
   padding: 30px 60px 30px 60px;
 }
 
-  /* Figure: Center everything by using margin-auto */
 figure{
   clear: both;
   float: left;
