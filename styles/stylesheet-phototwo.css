@@ -1,0 +1,119 @@
+  /* Entire page: Set widths, and set global font family */
+article.content-wrapper{
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", Arial, serif;
+  position: absolute;
+  height: 100%;
+  width: 80%;
+  text-align: center;
+  border-left: black solid 8em;
+  border-right: black solid 8em;
+}
+
+  /* Header: Change text size, color, and padding */
+h1{
+  color:mediumpurple;
+  font-size: 24px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+  /* Main Nagigation: Float, make navbar the entire width of the page, set font style and background color */ 
+nav.main-nav{
+  float: left;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 12px;
+  font-weight: bold;
+  background-color: mediumpurple;
+}
+ /* Place links in the center, equidistant throughout the bar */
+nav.main-nav ul{
+  display: flex;
+  justify-content:space-around;
+}
+/* Add borders, and padding to the elements in the list */
+nav.main-nav li{
+  border-right: black solid 0.05px;
+  width: 12%;
+  padding: 6px;
+}
+/* Style links */
+nav.main-nav a{
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+/* Eliminate black line after the last link */
+nav.main-nav li:last-child{
+  border-right: mediumpurple solid 0.05px;
+}
+
+  /* Clear float */
+aside ul{
+  clear: both;
+}
+/* Aside: Add float, background color, padding, and text style */
+aside{
+  float: left;
+  background-color: plum;
+  padding: 30px 60px 30px 60px;
+  line-height: normal;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Side navigation */
+nav.second-nav ul{
+  margin-top: 6em;
+  margin-bottom: 8em;
+}
+nav.second-nav li{
+  padding: 10px;
+}
+nav.second-nav a{
+  display: block;
+  color: white;
+  text-decoration: none;
+}
+
+  /* Article: Add background, center the content, change the background color */
+article.text{
+  background-color: lightgrey;
+  border-top: lightgrey solid 6em;
+  border-bottom: lightgrey solid 3em;
+  font-size: 10px;  
+  padding: 30px 60px 30px 60px;
+}
+
+  /* Figure: Center everything by using margin-auto */
+figure{
+  clear: both;
+  float: left;
+  margin: auto;
+}
+
+figcaption{
+  text-align: center;
+  padding: 0px 30px 0px 30px;
+  margin: 0em 5em 0em 20em;
+}
+
+img.one{
+  height: 20%;
+  width: 20%;
+  padding: 45px 10px 10px 10px;
+}
+
+  /* Footer: Images styles */
+img.two{
+  clear: both;
+  height: 2%;
+  width: 2%;
+  padding: 20px 10px;
+}
+footer{
+  width: 100%;
+}
