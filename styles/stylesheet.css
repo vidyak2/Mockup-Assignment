@@ -57,7 +57,7 @@
   /* Style links */
 
   .main-nav a {
-    display: block;
+    /*    display: block;*/
     color: white;
     text-decoration: none;
   }
@@ -107,21 +107,18 @@
   /* Figure: Add background, center the content, change the background color */
 
   section {
-    float: right;
-    display: inline;
     margin: auto;
 
     background-color: lightgrey;
 
-    width: 86.47%;
-    height: 86.7%;
+    width: 100%;
+    height: 90%;
   }
 
   figcaption {
-    display: block;
+    background-color: lightgrey;
     margin: auto;
-    position: absolute;
-    width: 84.6%;
+    width: 95%;
 
     padding-left: 1rem;
     line-height: 1rem;
@@ -132,24 +129,45 @@
   }
 
   .one {
-    height: 50%;
+    height: 40%;
     width: 30%;
     padding: 4rem 1rem 1rem 1rem;
   }
 
-  /* Footer: Images styles */
+  @media screen and (max-width: 718px) {
+    .one {
+      width: 50%;
+    }
+  }
 
   .two {
     clear: both;
     padding: 4rem 1rem 1rem 1rem;
-    height: 2%;
-    width: 2%;
+    height: 40%;
+    width: 15%;
+  }
+
+  @media screen and (max-width: 640px) {
+    .two {
+      width: 50%;
+    }
   }
 
   .three {
-    height: 50%;
-    width: 40%;
+    height: 30%;
+    width: 20%;
     padding: 4rem 1rem 1rem 1rem;
+  }
+
+  @media screen and (max-width: 764px) {
+    .three {
+      width: 40%;
+    }
+  }
+
+  .four {
+    height: 2rem;
+    width: 2rem;
   }
 
   footer {
