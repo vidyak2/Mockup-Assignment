@@ -1,118 +1,151 @@
   /* Entire page: Set widths, and set global font family */
-article.content-wrapper{
-  margin: 0;
-  padding: 0;
-  font-family: "Arial", Arial, serif;
-  position: absolute;
-  height: 100%;
-  width: 80%;
-  text-align: center;
-  border-left: black solid 8em;
-  border-right: black solid 8em;
-}
+
+  body {
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 100%;
+    background-color: black;
+  }
+
+  .content-wrapper {
+    margin: 0;
+    padding: 0;
+    font-family: "Arial", Arial, serif;
+    position: absolute;
+    height: 100%;
+    width: 90%;
+    text-align: center;
+    background-color: white;
+  }
 
   /* Header: Change text size, color, and padding */
-h1{
-  color:mediumpurple;
-  font-size: 24px;
-  padding-top: 20px;
-  padding-bottom: 10px;
-}
 
-  /* Main Nagigation: Float, make navbar the entire width of the page, set font style and background color */ 
-nav.main-nav{
-  float: left;
-  width: 100%;
-  margin: auto;
-  font-size: 12px;
-  font-weight: bold;
-  background-color: mediumpurple;
-  
-}
- /* Place links in the center, equidistant throughout the bar */
-nav.main-nav ul{
-  display: flex;
-  justify-content:space-around;
-}
-/* Add borders, and padding to the elements in the list */
-nav.main-nav li{
-  border-right: black solid 0.05px;
-  width: 12%;
-  padding: 6px;
-}
-/* Style links */
-nav.main-nav a{
-  display: block;
-  color: white;
-  text-decoration: none;
-}
-/* Eliminate black line after the last link */
-nav.main-nav li:last-child{
-  border-right: mediumpurple solid 0.05px;
-}
+  h1 {
+    color: mediumpurple;
+    font-size: 24px;
 
-/* Clear float */
-aside ul{
-  clear: both;
-}
-/* Aside: Add float, background color, padding, and text style */
-aside{
-  float: left;
-  background-color: plum;
-  padding: 0px 60px 0px 60px;
-}
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
 
-/* Side navigation */
-nav.second-nav ul{
-  margin-top: 6em;
-  margin-bottom: 8em;
-}
-nav.second-nav li{
-  padding: 10px;
-}
-nav.second-nav a{
-  display: inline;
-  font-size: 12px;
-  font-weight: bold;
-  color: white;
-  text-decoration: none;
-}
+  /* Main Nagigation: Float, make navbar the entire width of the page, set font style and background color */
+
+  .main-nav {
+    float: left;
+    width: 100%;
+    margin: auto;
+    font-size: 12px;
+    font-weight: bold;
+    background-color: mediumpurple;
+  }
+
+  /* Place links in the center, equidistant throughout the bar */
+
+  .main-nav ul {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  /* Add borders, and padding to the elements in the list */
+
+  .main-nav li {
+    border-right: black solid 0.05px;
+    width: 12%;
+    padding: 6px;
+  }
+
+  /* Style links */
+
+  .main-nav a {
+    display: block;
+    color: white;
+    text-decoration: none;
+  }
+
+  /* Eliminate black line after the last link */
+
+  .main-nav li:last-child {
+    border-right: mediumpurple solid 0.05px;
+  }
+
+  /* Clear float */
+
+  aside ul {
+    clear: both;
+  }
+
+  /* Aside: Add float, background color, padding, and text style */
+
+  aside {
+    float: left;
+    background-color: plum;
+
+    padding-left: 4.45%;
+    padding-right: 4.45%;
+    height: 86.7%;
+  }
+
+  /* Side navigation */
+
+  .second-nav ul {
+    margin-top: 6em;
+    margin-bottom: 8em;
+  }
+
+  .second-nav li {
+    padding: 10px;
+  }
+
+  .second-nav a {
+    display: inline;
+    font-size: 12px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+  }
 
   /* Figure: Add background, center the content, change the background color */
-figure{
-  float: right;
-  display: inline;
-  margin: auto;
-  width: 82.4%;
 
-  background-color: lightgrey;
-  border-top: lightgrey solid 6em;
-  border-bottom: lightgrey solid 9.3em;
-  
-  text-align: center;
-  font-size: 10px;  
-}
+  section {
+    float: right;
+    display: inline;
+    margin: auto;
 
-figcaption{
-  display: block;
-  margin: auto;
-  position: absolute;
-  padding: 10px 40px 10px 40px;
-}
+    background-color: lightgrey;
 
-img.one{
-  height: 40%;
-  width: 40%;
-  padding: 50px 10px 10px 10px;
-}
+    width: 86.47%;
+    height: 86.7%;
+  }
 
-/* Footer: Images styles */
-img.two{
-  clear: both;
-  height: 2%;
-  width: 2%;
-  padding: 20px 10px;
-}
-footer{
-  width: 100%;
-} 
+  figcaption {
+    display: block;
+    margin: auto;
+    position: absolute;
+    width: 84.6%;
+
+    padding-left: 1rem;
+    line-height: 1rem;
+
+    text-align: center;
+
+    font-size: 12px;
+  }
+
+  .one {
+    height: 40%;
+    width: 40%;
+    padding: 4rem 1rem 1rem 1rem;
+  }
+
+  /* Footer: Images styles */
+
+  .two {
+    clear: both;
+    padding: 4rem 1rem 1rem 1rem;
+    height: 2%;
+    width: 2%;
+  }
+
+  footer {
+    width: 100%;
+  }
