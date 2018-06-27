@@ -1,26 +1,38 @@
-  /* Entire page: Set widths, and set global font family */
-article.content-wrapper{
+/* Float is used to place content */
+
+/* Entire page: Set widths, and set global font family */
+
+body {
+  padding-left: 5%;
+  padding-right: 5%;
+  height: 100%;
+  background-color: black;
+}
+
+.content-wrapper {
   margin: 0;
   padding: 0;
   font-family: "Arial", Arial, serif;
   position: absolute;
   height: 100%;
-  width: 80%;
+  width: 90%;
   text-align: center;
-  border-left: black solid 8em;
-  border-right: black solid 8em;
+  background-color: white;
 }
 
-  /* Header: Change text size, color, and padding */
-h1{
-  color:mediumpurple;
+/* Header: Change text size, color, and padding */
+
+h1 {
+  color: mediumpurple;
   font-size: 24px;
-  padding-top: 20px;
-  padding-bottom: 10px;
+
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 
-  /* Main Nagigation: Float, make navbar the entire width of the page, set font style and background color */ 
-nav.main-nav{
+/* Main Nagigation: Float, make navbar the entire width of the page, set font style and background color */
+
+.main-nav {
   float: left;
   width: 100%;
   margin: auto;
@@ -28,48 +40,65 @@ nav.main-nav{
   font-weight: bold;
   background-color: mediumpurple;
 }
- /* Place links in the center, equidistant throughout the bar */
-nav.main-nav ul{
+
+/* Place links in the center, equidistant throughout the bar */
+
+.main-nav ul {
   display: flex;
-  justify-content:space-around;
+  justify-content: space-around;
 }
+
 /* Add borders, and padding to the elements in the list */
-nav.main-nav li{
+
+.main-nav li {
   border-right: black solid 0.05px;
   width: 12%;
   padding: 6px;
 }
+
 /* Style links */
-nav.main-nav a{
-  display: block;
+
+.main-nav a {
+  /*    display: block;*/
   color: white;
   text-decoration: none;
 }
+
 /* Eliminate black line after the last link */
-nav.main-nav li:last-child{
+
+.main-nav li:last-child {
   border-right: mediumpurple solid 0.05px;
 }
 
 /* Clear float */
-aside ul{
+
+aside ul {
   clear: both;
 }
+
 /* Aside: Add float, background color, padding, and text style */
-aside{
+
+aside {
   float: left;
   background-color: plum;
-  padding: 0px 60px 0px 60px;
+
+  padding-left: 4.45%;
+  padding-right: 4.45%;
+  height: 86.7%;
 }
 
 /* Side navigation */
-nav.second-nav ul{
+
+.second-nav ul {
   margin-top: 6em;
   margin-bottom: 8em;
 }
-nav.second-nav li{
+
+.second-nav li {
   padding: 10px;
 }
-nav.second-nav a{
+
+.second-nav a {
   display: inline;
   font-size: 12px;
   font-weight: bold;
@@ -77,41 +106,76 @@ nav.second-nav a{
   text-decoration: none;
 }
 
-  /* Figure: Add background, center the content, change the background color */
-figure{
-  float: right;
-  display: inline;
+/* Figure: Add background, center the content, change the background color */
+
+section {
   margin: auto;
-  width: 82.4%;
 
   background-color: lightgrey;
-  border-top: lightgrey solid 6em;
-  border-bottom: lightgrey solid 9.3em;
-  
-  text-align: center;
-  font-size: 10px;  
-}
 
-figcaption{
-  display: block;
-  margin: auto;
-  position: absolute;
-  padding: 10px 40px 10px 40px;
-}
-
-img.one{
-  height: 40%;
-  width: 40%;
-  padding: 50px 10px 10px 10px;
-}
-
-/* Footer: Images styles */
-img.two{
-  clear: both;
-  height: 2%;
-  width: 2%;
-  padding: 20px 10px;
-}
-footer{
   width: 100%;
-} 
+  height: 90%;
+}
+
+figcaption {
+  background-color: lightgrey;
+  margin: auto;
+  width: 95%;
+
+  padding-left: 1rem;
+  line-height: 1rem;
+
+  text-align: center;
+
+  font-size: 12px;
+}
+
+/* Image styles */
+
+.one {
+  height: 40%;
+  width: 30%;
+  padding: 4rem 1rem 1rem 1rem;
+}
+
+/* Resize image */
+
+@media screen and (max-width: 718px) {
+  .one {
+    width: 50%;
+  }
+}
+
+.two {
+  clear: both;
+  padding: 4rem 1rem 1rem 1rem;
+  height: 40%;
+  width: 15%;
+}
+
+@media screen and (max-width: 640px) {
+  .two {
+    width: 50%;
+  }
+}
+
+.three {
+  height: 30%;
+  width: 20%;
+  padding: 4rem 1rem 1rem 1rem;
+}
+
+@media screen and (max-width: 764px) {
+  .three {
+    width: 40%;
+  }
+}
+
+.four {
+  height: 2rem;
+  width: 2rem;
+}
+
+footer {
+  width: 100%;
+}
